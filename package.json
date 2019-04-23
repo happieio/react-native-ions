@@ -1,0 +1,77 @@
+{
+  "name": "csdemo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
+    "compile": "tsc -p ./tsconfig.json --skipLibCheck --noEmit",
+    "compile:watch": "tsc -p ./tsconfig.json --skipLibCheck --noEmit -w",
+    "ios": "react-native run-ios",
+    "test": "jest",
+    "update": "yarn react-native-git-upgrade"
+  },
+  "dependencies": {
+    "@expo/react-native-action-sheet": "^2.0.1",
+    "amplify": "^0.0.11",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "fluture": "^10.3.0",
+    "js-base64": "^2.5.1",
+    "lodash": "^4.17.11",
+    "native-base": "^2.12.1",
+    "react": "16.8.3",
+    "react-native": "^0.59.2",
+    "react-native-cli": "^2.0.1",
+    "react-native-collapsible": "^1.4.0",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-navigation": "^3.0.9",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.0.2",
+    "redux-saga-test-plan": "4.0.0-beta.2",
+    "urijs": "^1.19.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@babel/runtime": "^7.4.2",
+    "@react-native-community/eslint-config": "^0.0.3",
+    "@types/jest": "^24.0.11",
+    "@types/react": "^16.8.4",
+    "@types/react-native": "^0.57.42",
+    "@types/react-test-renderer": "^16.8.1",
+    "@types/urijs": "^1.15.38",
+    "babel-jest": "24.5.0",
+    "babel-plugin-module-resolver": "^3.1.2",
+    "eslint": "^5.15.3",
+    "jest": "24.1.0",
+    "metro-react-native-babel-preset": "0.53.1",
+    "react-addons-test-utils": "^15.6.2",
+    "react-native-git-upgrade": "^0.2.7",
+    "react-native-testing-library": "^1.5.0",
+    "react-native-typescript-transformer": "^1.2.11",
+    "react-test-renderer": "16.8.3",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.2.4"
+  },
+  "jest": {
+    "verbose": true,
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(js|ts|tsx)$": "<rootDir>/node_modules/babel-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testPathIgnorePatterns": [
+      "\\.snap$",
+      "<rootDir>/node_modules/"
+    ],
+    "cacheDirectory": ".jest/cache"
+  }
+}

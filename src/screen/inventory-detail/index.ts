@@ -1,0 +1,1 @@
+export { InventoryDetailScreen } from './inventory-detail-screen';
